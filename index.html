@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>小球打砖块游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="gameContainer" style="display:none;">
+        <div id="ball"></div>
+        <div id="paddle"></div>
+        <div id="score">得分: 0</div>
+        <div id="lives">生命: 3</div>
+    </div>
+
+    <!-- 添加玩家信息表单 -->
+    <div>
+        <input type="text" id="playerName" placeholder="输入玩家名字">
+        <input type="text" id="playerId" placeholder="输入玩家ID">
+        <button onclick="startGame()">开始游戏</button>
+    </div>
+
+    <!-- 显示玩家历史分数 -->
+    <div id="scoresContainer"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
